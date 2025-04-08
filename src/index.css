@@ -35,8 +35,21 @@ body {
     white-space: nowrap;
     border-right: 2px solid rgba(255,255,255,.75);
     animation: 
-      typing 4s steps(44) 1s 1 normal both,
+      typing 3s steps(44) 1s 1 normal both,
       blink-caret 1s steps(44) infinite normal;
+  }
+}
+
+.description {
+  width: 50%;
+  margin-left: 5vw;
+  word-wrap: normal;
+
+  h2 {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 3vw;
+    margin-inline: auto;
   }
 }
 

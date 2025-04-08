@@ -12,6 +12,7 @@ function App() {
     else setCount(count => count + 1);
     parallax.current.scrollTo(count)
   }
+
   return (
   <div>
     <Parallax ref={parallax} pages={3}>
@@ -25,35 +26,46 @@ function App() {
         </div>
       </ParallaxLayer>
 
+      <ParallaxLayer offset={0.8} speed={0.5} style={{ opacity: 0.95 }}>
+        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '30%' }} />
+        <img src={cloud} style={{ display: 'block', width: '30%', marginLeft: '70%' }} />
+        <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '75%' }} />
+      </ParallaxLayer>
+
       <ParallaxLayer sticky={{ start: 0.05, end: 3.5 }} onClick={() => handleClick(count)}>
         <img src={kirby} style={{ width: '15%', marginLeft: '80%' }} />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.95 }}>
+      <ParallaxLayer offset={1.1} speed={0.8} style={{ opacity: 0.95 }}>
         <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-        <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+        <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '85%' }} />
+      </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={0.05}>  
+        <div className='description'>
+          <h2>Hey there, I'm Lok Kwong and I am currently a software engineer for Mckesson.
+            I graduated from the University of Georgia with a bachelors in Computer Science. 
+          </h2>
+          <h2> 
+          </h2>
+          {/* add icons here */}
+        </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.95 }}>
-        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
-        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
+      <ParallaxLayer offset={1.35} speed={0.5} style={{ opacity: 0.95 }}>
+        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '67%' }} />
+        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '45%' }} />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.95 }}>
-        <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
+      {/* <ParallaxLayer offset={2.1} speed={0.2} style={{ opacity: 0.95 }}>
+        <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '30%' }} />
         <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
-      </ParallaxLayer>
-
-      <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: .95 }}>
+      </ParallaxLayer> */}
+{/* 
+      <ParallaxLayer offset={1.8} speed={-0.1} style={{ opacity: .95 }}>
         <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
         <img src={cloud} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
         <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
-      </ParallaxLayer>
-
-      <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.95 }}>
-        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-        <img src={cloud} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
-      </ParallaxLayer>
+      </ParallaxLayer> */}
 
     </Parallax>
   </div>
