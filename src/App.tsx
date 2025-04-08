@@ -13,7 +13,7 @@ function App() {
     parallax.current.scrollTo(count)
   }
   return (
-  <div style={{ width: '100%', height: '100%', background: '#253237' }}>
+  <div>
     <Parallax ref={parallax} pages={3}>
       <ParallaxLayer offset={0} speed={0} factor={3} className='background'/>
       <ParallaxLayer offset={1} speed={1}/>
