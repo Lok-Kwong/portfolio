@@ -50,14 +50,14 @@ body {
   50% { border-color: transparent; }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 430px) {
   .background {
     background-image: url("./assets/kirby_dreamland.png");
     background-size: cover !important;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 429px) {
   .background {
     background-image: url("./assets/background.png");
     background-size: cover !important;
