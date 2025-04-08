@@ -24,12 +24,12 @@ body {
 
 .typewritter {
   width: fit-content;
-  margin-left: 5em;
+  margin-left: 5vw;
 
   h2 {
     display: inline-block;
     font-family: monospace;
-    font-size: 4em;
+    font-size: 4vw;
     margin-inline: auto;
     overflow: hidden !important;
     white-space: nowrap;
@@ -50,18 +50,16 @@ body {
   50% { border-color: transparent; }
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@media (min-width: 321px) {
+  .background {
+    background-image: url("./assets/kirby_dreamland.png");
+    background-size: cover !important;
+  }
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  font-size: 50pt;
-}
-
-.background {
-  background-image: url("./assets/kirby_dreamland.png");
-  background-size: cover !important;
+@media (max-width: 320px) {
+  .background {
+    background-image: url("./assets/background.png");
+    background-size: cover !important;
+  }
 }
