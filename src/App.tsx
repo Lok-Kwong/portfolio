@@ -42,10 +42,15 @@ function App() {
       </ParallaxLayer>
       <ParallaxLayer offset={1} speed={0.05}>  
         <div className='description'>
-          <h2>Hey there, I'm Lok Kwong and I am currently a software engineer for Mckesson.
+          <h2 style={{ marginTop: '8vw'}}>Hey there, I'm Lok Kwong, currently a software engineer for Mckesson.
             I graduated from the University of Georgia with a bachelors in Computer Science. 
           </h2>
+          <h2> Outside of programming, I enjoy traveling and playing basketball. I'm the 24-25 NBA Fantasy champ amongst my group of friends.
+            I also love to watch, learn, and brainrot to various movies, tv shows, tik-toks, and other media. 
+          </h2>
           <h2> 
+          Get in Touch with me! 
+          I'm always open to new opportunities and collaborations!
           </h2>
           {/* add icons here */}
         </div>
@@ -53,7 +58,15 @@ function App() {
 
       <ParallaxLayer offset={1.35} speed={0.5} style={{ opacity: 0.95 }}>
         <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '67%' }} />
-        <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '45%' }} />
+        <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '55%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1.8} speed={0.5} style={{ opacity: 0.95 }}>
+        <img src={cloud} style={{ display: 'block', width: '15%', marginLeft: '67%' }} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2} speed={0.05}>  
+
       </ParallaxLayer>
 
       {/* <ParallaxLayer offset={2.1} speed={0.2} style={{ opacity: 0.95 }}>
