@@ -29,10 +29,10 @@ body {
   h2 {
     display: inline-block;
     font-family: monospace;
-    font-size: 4vw;
     margin-inline: auto;
     overflow: hidden !important;
     white-space: nowrap;
+    font-size: 3.5vw !important;
     border-right: 2px solid rgba(255,255,255,.75);
     animation: 
       typing 3s steps(44) 1s 1 normal both,
@@ -48,9 +48,13 @@ body {
   h2 {
     display: inline-block;
     font-family: monospace;
-    font-size: 2vw;
     margin-inline: auto;
   }
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes typing {
@@ -68,11 +72,18 @@ body {
     background-image: url("./assets/kirby_dreamland.png");
     background-size: cover !important;
   }
+  h2 {
+    font-size: 1.5vw;
+  }
 }
 
 @media (max-width: 429px) {
   .background {
     background-image: url("./assets/background.png");
     background-size: cover !important;
+  }
+  h2 {
+    font-size: 4vw;
+    color: black;
   }
 }
