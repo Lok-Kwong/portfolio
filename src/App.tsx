@@ -2,9 +2,9 @@ import { useRef, useState } from 'react';
 import kirby from './assets/Parasol_Kirby.webp'
 import cloud from './assets/cloud.png'
 import kirby_star from './assets/kirby_star.gif'
-import greensky from './assets/GreenSky-icon.jpg'
-import ncr from './assets/NCR-icon.png'
-import mckesson from './assets/Mck-icon.jpg'
+// import greensky from './assets/GreenSky-icon.jpg'
+// import ncr from './assets/NCR-icon.png'
+// import mckesson from './assets/Mck-icon.jpg'
 
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 
