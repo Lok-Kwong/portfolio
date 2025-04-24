@@ -2,9 +2,9 @@ import { useRef, useState } from 'react';
 import kirby from './assets/Parasol_Kirby.webp'
 import cloud from './assets/cloud.png'
 import kirby_star from './assets/kirby_star.gif'
-// import greensky from './assets/GreenSky-icon.jpg'
-// import ncr from './assets/NCR-icon.png'
-// import mckesson from './assets/Mck-icon.jpg'
+import greensky from './assets/GreenSky-icon.jpg'
+import ncr from './assets/NCR-icon.png'
+import mckesson from './assets/Mck-icon.jpg'
 
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 
@@ -53,19 +53,6 @@ function App() {
             <h2> Outside of programming, I enjoy traveling and playing basketball. I'm the 24-25 NBA Fantasy champ amongst my group of friends.
               I also love to watch, learn, and brainrot to various movies, tv shows, tik-toks, and other media.
             </h2>
-            <h2>
-              Get in Touch with me!
-              I'm always open to new opportunities and collaborations!
-            </h2>
-            <div>
-              <img src={kirby_star} />
-              <ul className='work-list'>
-                <li>GreenSky</li>
-                <li>NCR</li>
-                <li>Mckesson</li>
-              </ul>
-            </div>
-            {/* add icons here with line here */}
           </section>
         </ParallaxLayer>
 
@@ -79,7 +66,20 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={0.05}>
-
+          <section className='work'>
+            <div className='work-section'>
+              <div className='work-description'>
+                <h4> 2020</h4>
+                <img src={greensky} className='work-image' />
+              </div>
+              <div className='work-description'>
+                <img src={ncr} className='work-image' />
+              </div>
+              <div className='work-description'>
+                <img src={mckesson} className='work-image' />
+              </div>
+            </div>
+          </section>
         </ParallaxLayer>
 
         {/* <ParallaxLayer offset={2.1} speed={0.2} style={{ opacity: 0.95 }}>
