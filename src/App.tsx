@@ -69,12 +69,13 @@ function App() {
           <section className='work'>
             <div className='work-section'>
               <div className='work-description'>
-                <h4> 2020</h4>
                 <img src={greensky} className='work-image' />
               </div>
+              <div className="vl"></div> 
               <div className='work-description'>
                 <img src={ncr} className='work-image' />
               </div>
+              <div className="vl"></div> 
               <div className='work-description'>
                 <img src={mckesson} className='work-image' />
               </div>

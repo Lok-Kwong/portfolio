@@ -50,23 +50,33 @@ body {
     font-family: monospace;
     margin-inline: auto;
   }
+
   h3 {
     text-decoration: underline;
   }
 }
 
-.work-list {
+.work {
   display: flex;
   justify-content: space-between;
 
+  .work-description {
+    line-height: 0;
+  }
+  
   .work-section {
     display: flex;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
+    /* flex-grow: 1; */
+    margin: 5vw;
   }
+}
 
+.vl {
+  border-left:3px solid white;
+  height: 200px;
+  /* margin-left: 3.5vw; */
 }
 
 @keyframes typing {
@@ -104,7 +114,6 @@ body {
   .work-image {
     width: 10vh;
     height: 10vh;
-    margin-top: 3vh;
     border: .2rem solid rgba(255, 255, 255, .75);
     border-radius: 100%;
     background: rgba(255, 255, 255, .75);
