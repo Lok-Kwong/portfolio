@@ -80,6 +80,19 @@ function App() {
                 <img src={mckesson} className='work-image' />
               </div>
             </div>
+            <div className='work-blurb'>
+              <div className='work-description'>
+                <h2> Intern at GreenSky</h2>
+              </div>
+              <div className="v2"></div> 
+              <div className='work-description'>
+              <h2> First full-time job at NCR! </h2>
+              </div>
+              <div className="v2"></div> 
+              <div className='work-description'>
+              <h2> Currently working for McKesson </h2>
+              </div>
+            </div>
           </section>
         </ParallaxLayer>
 
